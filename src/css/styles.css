@@ -1,0 +1,33 @@
+/* Estilos globales */
+body {
+  background-color: rgba(13, 53, 163, 0.829);
+  color: rgb(240, 234, 234);
+}
+
+/* Estilos para los enlaces */
+a {
+  color: rgb(6, 100, 11);
+  text-decoration: aqua;
+}
+
+/* Estilos para los botones */
+.btn-primary {
+  background-color: rgb(120, 120, 226);
+  border-color: rgb(92, 127, 223);
+}
+
+/* Estilos para las tarjetas */
+.card {
+  background-color: white;
+  color: black;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Estilos para los encabezados */
+h1, h2, h3, h4, h5, h6 {
+  color: rgb(139, 14, 14);
+}
+
+/*# sourceMappingURL=styles.css.map */
