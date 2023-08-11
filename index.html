@@ -1,34 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link href="styles.css" rel="stylesheet">
-    
-</head>
-<body>
-    Hello, world!
-
-    <title>My Webpage</title>
-    <style>
-      body {
-        background-color: #f2f2f2;
-      }
-
-      .jumbotron {
-        background-color: #007bff;
-        color: #fff;
-      }
-    </style>
-</head>
-<body>
-    <title>Mi Sitio Web</title>
-    <!-- Enlace a los estilos de Bootstrap -->
+    <link rel="stylesheet" href="src/css/styles.css"> <!-- Enlaza tu archivo CSS compilado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+ <!-- Enlace a los estilos de Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- Estilos personalizados -->
+  
+</head>
 
+
+<body class="custom-body">
+    <title>Mi Sitio Web</title>
+   
     <div class="container">
       <div class="jumbotron">
         <h1 class="display-4">Bienvenido a Mi Sitio Web</h1>
@@ -38,17 +24,17 @@
       <div class="row">
         <div class="col-md-3">
           <div class="card">
-            <img src="hobbies.jpg" class="card-img-top" alt="Mis Hobbies">
+            <img src="src/images/futbol.jpg" class="card-img-top" alt="Futbol">
             <div class="card-body">
-              <h5 class="card-title">Mis Hobbies</h5>
-              <p class="card-text">Aquí encontrarás información sobre mis hobbies favoritos.</p>
-              <a href="hobbies.html" class="btn btn-primary">Ver más</a>
+              <h5 class="card-title">Futbol</h5>
+              <p class="card-text">Aquí encontrarás información sobre mis Equipos favoritos y jugadores favoritos.</p>
+              <a href="futbol.html" class="btn btn-primary">Ver más</a>
             </div>
           </div>
         </div>
         <div class="col-md-3">
           <div class="card">
-            <img src="musica.jpg" class="card-img-top" alt="Mi Música Favorita">
+            <img src="src/images/musica.jpg" class="card-img-top" alt="Mi Música Favorita">
             <div class="card-body">
               <h5 class="card-title">Mi Música Favorita</h5>
               <p class="card-text">Aquí encontrarás información sobre mis géneros y artistas musicales preferidos.</p>
@@ -58,27 +44,63 @@
         </div>
         <div class="col-md-3">
           <div class="card">
-            <img src="peliculas.jpg" class="card-img-top" alt="Mis Películas Preferidas">
+            <img src="src/images/anime.jpg" class="card-img-top" alt="Mis Animes preferidos">
             <div class="card-body">
-              <h5 class="card-title">Mis Películas Preferidas</h5>
-              <p class="card-text">Aquí encontrarás una lista de mis películas favoritas.</p>
+              <h5 class="card-title">Mis Animes favoritos</h5>
+              <p class="card-text">Aquí encontrarás una lista de mis Animes favoritos.</p>
+              <a href="anime.html" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="src/images/peliculas.jpg" class="card-img-top" alt="Mis Peliculas preferidas">
+            <div class="card-body">
+              <h5 class="card-title">Mis Peliculas favoritas</h5>
+              <p class="card-text">Aquí encontrarás una lista de mis Peliculas favoritas.</p>
               <a href="peliculas.html" class="btn btn-primary">Ver más</a>
             </div>
           </div>
         </div>
-
 
             </div>
           </div>
         </div>
       </div>
     </div>
-
+  
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Redes Sociales</h4>
+            <ul class="social-links">
+              <li class="social-link">
+                <a href="https://www.facebook.com/profile.php?id=100075961553931" target="_blank" class="social-link facebook">
+                  <i class="fab fa-facebook-f"></i>
+                  <span>Facebook</span>
+                </a>
+                
+                <a href="https://twitter.com/JackFD326528" target="_blank" class="social-link twitter">
+                  <i class="fab fa-twitter"></i>
+                  <span>Twitter</span>
+                </a>
+                
+                <a href="https://www.instagram.com/jackffd20/" target="_blank" class="social-link instagram">
+                  <i class="fab fa-instagram"></i>
+                  <span>Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Scripts de Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-      <!-- Scripts de Bootstrap -->
-      <script>alert("Estas en mi homepage");</script>
+    <script src="https://kit.fontawesome.com/646ac4fad6.js" crossorigin="anonymous"></script>
+    
+   
 </body>
 </html>

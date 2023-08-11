@@ -1,33 +1,299 @@
-/* Estilos globales */
-body {
-  background-color: rgba(13, 53, 163, 0.829);
-  color: rgb(240, 234, 234);
+@import 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css';
+.custom-body, .body-fut {
+  background-color: rgba(12, 147, 236, 0.9647058824);
+  color: rgba(10, 18, 61, 0.6431372549);
+  font-family: Arial, sans-serif;
 }
 
-/* Estilos para los enlaces */
-a {
-  color: rgb(6, 100, 11);
-  text-decoration: aqua;
+header {
+  background-color: #87ceeb;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 18px;
 }
 
-/* Estilos para los botones */
-.btn-primary {
-  background-color: rgb(120, 120, 226);
-  border-color: rgb(92, 127, 223);
+h6 {
+  color: #f3cc1e;
+  font-size: 50rem;
+  margin-bottom: 50px;
 }
 
-/* Estilos para las tarjetas */
-.card {
-  background-color: white;
+.container {
+  text-align: center;
+  gap: 10px;
+}
+
+.equipo1, .equipo2, .equipo3, .jugador1, .jugador2, .jugador3 {
+  background-color: #94efff;
+  padding: 90px;
+  width: 100%;
+  text-align: center;
+  display: center;
+}
+.equipo1 img, .equipo2 img, .equipo3 img, .jugador1 img, .jugador2 img, .jugador3 img {
+  width: 120px;
+  height: 120px;
+}
+.equipo1 .equipo-desc, .equipo1 .jugado-des, .equipo2 .equipo-desc, .equipo2 .jugado-des, .equipo3 .equipo-desc, .equipo3 .jugado-des, .jugador1 .equipo-desc, .jugador1 .jugado-des, .jugador2 .equipo-desc, .jugador2 .jugado-des, .jugador3 .equipo-desc, .jugador3 .jugado-des {
   color: black;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.jumbotron {
+  background-color: rgba(0, 225, 255, 0.937254902);
+  padding: 50px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+.jumbotron h1 {
+  color: #eb5035;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.jumbotron p {
+  color: #f3cc1e;
+  font-size: 1.5rem;
+}
+
+.container {
+  text-align: center;
+  gap: 10px;
+}
+
+.equipo-card {
+  background-color: white;
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.equipo-card img {
+  width: 120px;
+  height: 120px;
+}
+.equipo-card .card-desc {
+  color: black;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.card {
+  background-color: #87ceeb;
+  color: rgba(12, 147, 236, 0.9647058824);
   border: none;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card .card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.card .card-text {
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: #f3cc1e;
+  border-color: #f3cc1e;
+}
+.btn-primary:hover {
+  background-color: #eb5035;
+  border-color: #eb5035;
+}
+
+footer {
+  background-color: black;
+  padding: 20px 10px;
+  text-align: center;
+}
+footer .social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+footer .social-links .social-link {
+  margin: 0 10px;
+}
+footer .social-links .social-link a {
+  color: rgba(12, 147, 236, 0.9647058824);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+footer .social-links .social-link a:hover {
+  color: #eb5035;
+}
+footer .social-links .social-link a.facebook {
+  color: #0c71f7;
+}
+footer .social-links .social-link a.facebook:hover {
+  color: #075ac9;
+}
+footer .social-links .social-link a.twitter {
+  color: #1da1f2;
+}
+footer .social-links .social-link a.twitter:hover {
+  color: #0c85d0;
+}
+footer .social-links .social-link a.instagram {
+  color: #ad003a;
+}
+footer .social-links .social-link a.instagram:hover {
+  color: #7a0029;
+}
+
+@media (max-width: 768px) {
+  .equipo-card {
+    padding: 20px;
+  }
+  .equipo-card img {
+    width: 80px;
+    height: 80px;
+  }
+  .equipo-card .card-desc {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  .jumbotron {
+    padding: 30px;
+  }
+  .jumbotron h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .jumbotron p {
+    font-size: 1rem;
+  }
+  header {
+    padding: 10px;
+  }
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+  header p {
+    font-size: 16px;
+  }
+}
+.equipo1, .equipo2, .equipo3, .jugador1, .jugador2, .jugador3 {
+  padding: 10px;
+}
+.equipo1 img, .equipo2 img, .equipo3 img, .jugador1 img, .jugador2 img, .jugador3 img {
+  width: 80px;
+  height: 80px;
+}
+.equipo1 .equipo-desc, .equipo1 .jugado-des, .equipo2 .equipo-desc, .equipo2 .jugado-des, .equipo3 .equipo-desc, .equipo3 .jugado-des, .jugador1 .equipo-desc, .jugador1 .jugado-des, .jugador2 .equipo-desc, .jugador2 .jugado-des, .jugador3 .equipo-desc, .jugador3 .jugado-des {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.ventana {
+  position: right;
+  display: right;
+  margin: 20px;
+}
+.ventana .ventana-toggle {
+  display: right;
+}
+.ventana .ventana-btn {
+  background-color: #87ceeb;
+  color: rgb(82, 247, 247);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.ventana .ventana-btn .btn-bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 4px 0;
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.3s, transform 0.3s;
+}
+.ventana .ventana-btn:hover {
+  background-color: #eb5035;
+}
+.ventana .ventana-btn:hover .btn-bar {
+  background-color: #eb5035;
+}
+.ventana .ventana-content {
+  background-color: #87ceeb;
+  position: right;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s, opacity 0.3s;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.ventana .ventana-content a {
+  display: block;
+  color: rgba(12, 147, 236, 0.9647058824);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.ventana .ventana-content a:hover {
+  color: #eb5035;
+}
+.ventana .ventana-toggle:checked + .ventana-btn + .ventana-content {
+  transform: scaleY(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.anime-card {
+  display: inline-block;
+  text-align: center;
   margin: 10px;
+}
+
+.bubble {
+  position: relative;
+  background-color: #87ceeb;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
   padding: 10px;
 }
 
-/* Estilos para los encabezados */
-h1, h2, h3, h4, h5, h6 {
-  color: rgb(139, 14, 14);
+.bubble img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.description {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.description h5 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.description p {
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
