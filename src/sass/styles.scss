@@ -13,11 +13,23 @@ $color-red: #ff0000;
 $color-blue: #0c93ecf6;
 $color-black: #0a123da4;
 
-// Estilos generales del cuerpo de la página
-.custom-body,.body-fut {
+
+// Selector para la herencia
+.base-style {
   background-color: $color-blue;
   color: $color-black;
   font-family: Arial, sans-serif;
+}
+
+// ID para la herencia
+#content-container {
+  text-align: center;
+  gap: 10px;
+}
+
+// Estilos generales del cuerpo de la página
+.custom-body, .body-fut {
+  @extend .base-style;
 }
  
 header {
